@@ -1,5 +1,5 @@
 {
-  "name": "@ing200086/elements",
+  "name": "@ing200086/aiki-elements",
   "version": "0.2.0",
   "description": "Elements for aiki project",
   "author": {
@@ -8,8 +8,7 @@
   },
   "repository" : {
     "type" : "git",
-    "url": "ssh://git@github.com/ing200086/-aiki.git",
-    "directory": "@aiki/elements"
+    "url": "ssh://git@github.com/ing200086/-aiki.git"
   },
   "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "bugs": "https://github.com/ing200086/-aiki/issues",
