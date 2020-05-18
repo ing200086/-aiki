@@ -1,14 +1,19 @@
 {
-  "name": "@aiki/elements",
-  "version": "0.1.0",
+  "name": "@ing200086/elements",
+  "version": "0.2.0",
   "description": "Elements for aiki project",
   "author": {
     "name": "Daniel Barnhart",
     "email": "ing200086@gmail.com"
   },
-  "repository": "https://github.com/ing200086/-aiki",
+  "repository" : {
+    "type" : "git",
+    "url": "ssh://git@github.com/ing200086/-aiki.git",
+    "directory": "@aiki/elements"
+  },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "bugs": "https://github.com/ing200086/-aiki/issues",
-  "private": true,
+  "private": false,
   "files": ["dist"],
   "scripts": {
     "serve": "vue-cli-service serve",
