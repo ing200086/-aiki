@@ -1,15 +1,26 @@
 {
-  "name": "elements",
+  "name": "@aiki/elements",
   "version": "0.1.0",
+  "description": "Elements for aiki project",
+  "author": {
+    "name": "Daniel Barnhart",
+    "email": "ing200086@gmail.com"
+  },
+  "repository": "https://github.com/ing200086/-aiki",
+  "bugs": "https://github.com/ing200086/-aiki/issues",
   "private": true,
+  "files": ["dist"],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
     "storybook:build": "vue-cli-service storybook:build -c config/storybook",
-    "storybook:serve": "vue-cli-service storybook:serve -p 6006 -c config/storybook"
+    "storybook:serve": "vue-cli-service storybook:serve -p 6006 -c config/storybook",
+    "build:npm": "vue build --target wc-async --name aiki-component src/components/*.vue"
   },
+  "main": "dist/myComponent.umd.js",
+  "unpkg": "dist/myComponent.umd.min.js",
   "dependencies": {
     "core-js": "^3.6.4",
     "vue": "^2.6.11"
@@ -32,14 +43,5 @@
     "lint-staged": "^9.5.0",
     "vue-cli-plugin-storybook": "^1.2.2",
     "vue-template-compiler": "^2.6.11"
-  },
-  "gitHooks": {
-    "pre-commit": "lint-staged"
-  },
-  "lint-staged": {
-    "*.{js,jsx,vue}": [
-      "vue-cli-service lint",
-      "git add"
-    ]
   }
 }

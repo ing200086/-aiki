@@ -7,11 +7,13 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import MyButton from "./components/MyButton";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    MyButton
   }
 }
 </script>
