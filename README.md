@@ -1,3 +1,6 @@
+# Background
+[Structuring](https://www.xiegerts.com/post/creating-vue-component-library-structure/)
+
 # elements
 
 ## Project setup
