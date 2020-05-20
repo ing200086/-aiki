@@ -1,6 +1,6 @@
 {
   "name": "@ing200086/aiki-elements",
-  "version": "0.3.7",
+  "version": "0.3.11",
   "description": "Elements for aiki project",
   "author": {
     "name": "Daniel Barnhart",
@@ -13,7 +13,7 @@
   "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "bugs": "https://github.com/ing200086/-aiki/issues",
   "private": false,
-  "files": ["dist"],
+  "files": ["dist", "src/components/**/*.vue", "src/components/**/index.js"],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
