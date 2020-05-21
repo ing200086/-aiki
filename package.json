@@ -1,6 +1,6 @@
 {
   "name": "@ing200086/aiki-elements",
-  "version": "0.3.11",
+  "version": "0.3.25",
   "description": "Elements for aiki project",
   "author": {
     "name": "Daniel Barnhart",
@@ -13,19 +13,18 @@
   "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "bugs": "https://github.com/ing200086/-aiki/issues",
   "private": false,
-  "files": ["dist", "src/components/**/*.vue", "src/components/**/index.js"],
+  "files": ["dist",
+    "**/*.vue",
+    "**/index.js"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
     "storybook:build": "vue-cli-service storybook:build -c config/storybook",
-    "storybook:serve": "vue-cli-service storybook:serve -p 6006 -c config/storybook",
-    "build:npm": "vue build --target lib --name aiki-component src/main.js"
+    "storybook:serve": "vue-cli-service storybook:serve -p 6006 -c config/storybook"
   },
-  "main": "dist/aiki-component.umd.js",
-  "module": "dist/aiki-component.common.js",
-  "unpkg": "dist/aiki-component.umd.min.js",
   "dependencies": {
     "core-js": "^3.6.4",
     "vue": "^2.6.11"
