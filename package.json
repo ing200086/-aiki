@@ -1,6 +1,6 @@
 {
   "name": "@ing200086/aiki-elements",
-  "version": "0.3.25",
+  "version": "0.3.28",
   "description": "Elements for aiki project",
   "author": {
     "name": "Daniel Barnhart",
@@ -14,8 +14,8 @@
   "bugs": "https://github.com/ing200086/-aiki/issues",
   "private": false,
   "files": ["dist",
-    "**/*.vue",
-    "**/index.js"
+    "src/**/*.vue",
+    "src/**/index.js"
   ],
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -25,6 +25,7 @@
     "storybook:build": "vue-cli-service storybook:build -c config/storybook",
     "storybook:serve": "vue-cli-service storybook:serve -p 6006 -c config/storybook"
   },
+  "module": "src/index.js",
   "dependencies": {
     "core-js": "^3.6.4",
     "vue": "^2.6.11"
