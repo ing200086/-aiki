@@ -18,7 +18,8 @@
 
     @Component
     export default class IncrementingInput extends Vue {
-        @Prop({default: 0, required: false}) readonly initial: number = 0
+        @Prop({default: 0})
+        initial!: number
         public value: number = 0
 
         created() {

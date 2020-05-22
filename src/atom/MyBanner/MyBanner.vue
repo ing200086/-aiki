@@ -1,5 +1,6 @@
 <template>
   <button class="button is-primary" @click="onClick">
+    {{ propText }}
     <slot></slot>
   </button>
 </template>
@@ -7,7 +8,7 @@
 <script>
 export default {
   name: 'my-banner',
-
+  props: ['propText'],
   methods: {
     onClick() {
       this.$emit('click')
