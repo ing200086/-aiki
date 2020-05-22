@@ -1,0 +1,39 @@
+import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks';
+import { action } from "@storybook/addon-actions";
+import { linkTo } from '@storybook/addon-links'
+import MyBanner from './MyBanner.vue';
+
+<Meta title="MDX|Banner" component={MyBanner} />
+
+# Banner
+
+<Props of={MyBanner} />
+
+This is a simple button with some text in it.
+
+<Preview>
+  <Story name="With Text">
+    {{
+        components: { MyBanner },
+        template: '<my-banner @click="action">Hello Banner</my-banner>',
+        methods: { action: action("clicked") }
+    }}
+  </Story>
+</Preview>
+
+You can perform some action when the banner is clicked.
+
+<Preview>
+  <RMyBanner onClick={linkTo('Banner', 'With Some Emoji')}>With JSX</RMyBanner>
+</Preview>
+
+You can even have Emoji in the banner.
+
+<Preview>
+  <Story name="With Some Emoji">
+    {{
+        components: { MyBanner },
+        template: '<my-banner>😀 😎 👍 💯</my-banner>'
+    }}
+  </Story>
+</Preview>

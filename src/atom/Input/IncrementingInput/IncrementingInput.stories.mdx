@@ -1,0 +1,33 @@
+import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks';
+import { action } from "@storybook/addon-actions";
+import { linkTo } from '@storybook/addon-links'
+import { number } from '@storybook/addon-knobs'
+import IncrementingInput from './IncrementingInput.vue';
+
+<Meta title="Input|Incrementing Input" component={IncrementingInput} />
+
+# Incrementing Input
+
+<Props of={IncrementingInput} />
+
+This is a simple button with some text in it.
+
+<Preview>
+  <Story name="With Text">
+    {{
+        components: { IncrementingInput },
+        template: '<incrementing-input :initial=initial></incrementing-input>',
+        props : {
+            initial: {
+              default: number('Initial Number', 0 )
+            },
+        }
+    }}
+  </Story>
+</Preview>
+
+You can perform some action when the button is clicked.
+
+<Preview>
+  <RIncrementingInput></RIncrementingInput>
+</Preview>

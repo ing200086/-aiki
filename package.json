@@ -1,22 +1,12 @@
 {
   "name": "@ing200086/aiki-elements",
   "version": "0.3.28",
+  "private": false,
   "description": "Elements for aiki project",
   "author": {
     "name": "Daniel Barnhart",
     "email": "ing200086@gmail.com"
   },
-  "repository" : {
-    "type" : "git",
-    "url": "ssh://git@github.com/ing200086/-aiki.git"
-  },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
-  "bugs": "https://github.com/ing200086/-aiki/issues",
-  "private": false,
-  "files": ["dist",
-    "src/**/*.vue",
-    "src/**/index.js"
-  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -26,9 +16,16 @@
     "storybook:serve": "vue-cli-service storybook:serve -p 6006 -c config/storybook"
   },
   "module": "src/index.js",
+  "files": [
+    "dist",
+    "src/**/*.vue",
+    "src/**/index.js"
+  ],
   "dependencies": {
     "core-js": "^3.6.4",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "vue-class-component": "^7.2.3",
+    "vue-property-decorator": "^8.4.1"
   },
   "devDependencies": {
     "@storybook/addon-actions": ">=5.3.0",
@@ -37,16 +34,32 @@
     "@storybook/addon-links": ">=5.3.0",
     "@storybook/addon-notes": ">=5.3.0",
     "@storybook/vue": ">=5.3.0",
+    "@types/jest": "^24.0.19",
+    "@typescript-eslint/eslint-plugin": "^2.26.0",
+    "@typescript-eslint/parser": "^2.26.0",
     "@vue/cli-plugin-babel": "~4.3.0",
     "@vue/cli-plugin-eslint": "~4.3.0",
+    "@vue/cli-plugin-typescript": "^4.3.1",
     "@vue/cli-plugin-unit-jest": "~4.3.0",
     "@vue/cli-service": "~4.3.0",
+    "@vue/eslint-config-typescript": "^5.0.2",
     "@vue/test-utils": "1.0.0-beta.31",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
     "lint-staged": "^9.5.0",
+    "typescript": "~3.8.3",
+    "@types/node": "^14.0.5",
+    "@types/react": "^16.9.35",
     "vue-cli-plugin-storybook": "^1.2.2",
     "vue-template-compiler": "^2.6.11"
+  },
+  "bugs": "https://github.com/ing200086/-aiki/issues",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/ing200086/-aiki.git"
   }
 }
